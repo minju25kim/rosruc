@@ -74,7 +74,7 @@ function App() {
           </StyledCursor>
         ))}
       </StyledContainer>
-      <StyledTitle>Try to move the image below.</StyledTitle>
+      <StyledTitle>Drag this image.</StyledTitle>
       <StyledContainer>
         <img src={inspiration} onDragEnd={()=>{alert("you can't move it.")}} alt="inspiration jpeg" />
       </StyledContainer>
