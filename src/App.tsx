@@ -25,6 +25,7 @@ const StyledContainer = styled.div<{}>`
   }
   margin: 0 auto;
   img {
+    cursor: move;
     @media (min-width: 800px) {
       max-width: 900px;
     }
@@ -65,7 +66,7 @@ function App() {
 
   return (
     <>
-      <StyledTitle>:hover cursor:</StyledTitle>
+      <StyledTitle>cursor:</StyledTitle>
       <StyledContainer>
         {cursorList.map((element, index) => (
           <StyledCursor key={index} value={element}>
@@ -73,8 +74,9 @@ function App() {
           </StyledCursor>
         ))}
       </StyledContainer>
+      <StyledTitle>Try to move the image below.</StyledTitle>
       <StyledContainer>
-        <img src={inspiration} alt="inspiration jpeg" />
+        <img src={inspiration} onDragEnd={()=>{alert("you can't move it.")}} alt="inspiration jpeg" />
       </StyledContainer>
     </>
   );
