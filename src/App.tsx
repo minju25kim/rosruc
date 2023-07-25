@@ -76,7 +76,7 @@ function App() {
       </StyledContainer>
       <StyledTitle>Drag this image.</StyledTitle>
       <StyledContainer>
-        <img src={inspiration} onDragEnd={()=>{alert("you can't move it.")}} alt="inspiration jpeg" />
+        <img src={inspiration} onDragEnd={()=>{alert("hi, you can't move it.")}} alt="inspiration jpeg" />
       </StyledContainer>
     </>
   );
